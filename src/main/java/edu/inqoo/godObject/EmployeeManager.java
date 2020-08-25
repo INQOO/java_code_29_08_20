@@ -19,6 +19,7 @@ public class EmployeeManager {
         employee.setName(name);
         employee.setLogin(login);
         employee.setPassword(password);
+        employee.setAddress(address);
         employee.setType(type);
         employee.setDepartment(department);
         employee.setSalary(salary==null ? getDefaultSalary(department, type) : salary);
@@ -86,6 +87,7 @@ public class EmployeeManager {
         updateEmployee.setName(name);
         updateEmployee.setLogin(login);
         updateEmployee.setPassword(password);
+        updateEmployee.setAddress(address);
         updateEmployee.setType(type);
         updateEmployee.setDepartment(department);
         updateEmployee.setSalary(salary==null ? getDefaultSalary(department, type) : salary);
