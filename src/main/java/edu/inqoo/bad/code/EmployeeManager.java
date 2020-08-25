@@ -1,4 +1,4 @@
-package edu.inqoo.godObject;
+package edu.inqoo.bad.code;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;
@@ -73,7 +73,7 @@ public class EmployeeManager {
         return typeEmployee;
     }
 
-    public void updateEmployee(String name, String login, String password,
+    public void updateEmployee(String name, String login,
     String address, String type, String department, BigDecimal salary) throws Exception {
         Employee updateEmployee = new Employee();
         for (Employee employee: employeeList) {
@@ -85,8 +85,6 @@ public class EmployeeManager {
             throw new Exception("user not found");
         }
         updateEmployee.setName(name);
-        updateEmployee.setLogin(login);
-        updateEmployee.setPassword(password);
         updateEmployee.setAddress(address);
         updateEmployee.setType(type);
         updateEmployee.setDepartment(department);

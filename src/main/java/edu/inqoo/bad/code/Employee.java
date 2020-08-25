@@ -1,4 +1,4 @@
-package edu.inqoo.godObject;
+package edu.inqoo.bad.code;
 
 import java.math.BigDecimal;
 
