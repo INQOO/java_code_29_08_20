@@ -1,0 +1,9 @@
+Firma zamówiła system do zarządzania pracownikami w swojej organizacji, która składa się z trzech departamentów (HR, Sales, Production). Pracownicy mogą być na jednym z trzech stanowisk(CEO, Manager, Worker) z ustaloną początkową płacą.
+
+Stworzony system okazał się źle napisany, stworzone testy kontrolne nie przechodzą. Okazuje się, że cały kod ma błędy, choć kod się kompiluje.
+
+Firma zakończyła współpracę z twórcą kodu i prosi Ciebie byś przeanalizował kod i zmienił go w taki sposób by funkcjonalność działała w odpowiedni sposób.
+
+Na podstawie kodu, napisz nowy, lepszy system, który będzie miał funkcjonalność oczekiwaną przez klienta (EmployeeManager).
+
+Klient dodatkowo życzy sobie by funkcjonalność zarządzania pracownikami, można by przenieść do zarządzania klientami.
