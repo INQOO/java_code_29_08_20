@@ -14,5 +14,5 @@ System powinien składać się z:
     • obiekt Samochód z polami: Marka, Model, Tablica Rejestracyjna(unikatowe), Kolor, Typ(suv, hatchback, kombi), data wypożyczenia
       lub obiekt Książka z polami: Autor, Tytuł, ISBN(unikatowe), typ(Sci-fi, horror, poezja) Okładka, data wypożyczenia
     • Klasę zarządzającą posiadającą 10 obiektów różnego typu
-    • Klasę do wyświatlania wyników
+    • Klasę do wyświatlania wyników (opcjonalnie)
     • Klasę testową klasy zarządzającej
