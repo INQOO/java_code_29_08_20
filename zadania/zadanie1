@@ -2,9 +2,9 @@ Biblioteka / Wypożyczalnia samochodów
 
 Stwórz prosty system do zarządzania Biblioteka  lub Wypożyczalnia samochodów, który ma następujące funkcje:
 
-    • wyświetla wszystkie książki/samochody
-    • wyświetla wolne książki/samochody
-    • wyświetla książki/samochody, których data zwrotu minęła
+    • zwraca wietla wszystkie książki/samochody
+    • zwraca wolne książki/samochody
+    • zwraca książki/samochody, których data zwrotu minęła
     • daje możliwość wypożyczenia książki/samochodu (na tydzień czasu)
     • daje możliwość zwrotu samochodu
 
