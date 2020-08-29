@@ -6,6 +6,7 @@ import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import java.util.NoSuchElementException;
 
 public class EmployeeManager {
     private List<Employee> employeeList = new ArrayList();
@@ -28,15 +29,26 @@ public class EmployeeManager {
     public void addEmployee(String name, String login,
                             String password, String address,
                             WorkerType type, Department department){
-        Employee employee = new Employee(login);
-        employee.setName(name);
-        employee.setPassword(password);
-        employee.setAddress(address);
-        employee.setType(type);
-        employee.setDepartment(department);
-        employee.setSalary(getDefaultSalary(type, department));
+        if(!doesEmployeeExist(login)) {
+            Employee employee = new Employee(login);
+            employee.setName(name);
+            employee.setPassword(password);
+            employee.setAddress(address);
+            employee.setType(type);
+            employee.setDepartment(department);
+            employee.setSalary(getDefaultSalary(type, department));
 
-        employeeList.add(employee);
+            employeeList.add(employee);
+        }
+    }
+
+    public boolean doesEmployeeExist(String login){
+        for (Employee employee: employeeList) {
+            if(login.equals(employee.getLogin())){
+                return true;
+            }
+        }
+        return false;
     }
 
     public BigDecimal getDefaultSalary(WorkerType type, Department department){
@@ -49,5 +61,21 @@ public class EmployeeManager {
 
             default: return BigDecimal.ZERO;
         }
+    }
+
+    public void removeEmployee(String login){
+        if(doesEmployeeExist(login)){
+            Employee employee = getEmployee(login);
+            employeeList.remove(employee);
+        }
+    }
+
+    public Employee getEmployee(String login) {
+        for (Employee employee: employeeList) {
+            if(login.equals(employee.getLogin())){
+                return employee;
+            }
+        }
+        return Employee.DEFAULT_EMPLOYEE;
     }
 }

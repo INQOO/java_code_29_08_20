@@ -4,6 +4,8 @@ import java.math.BigDecimal;
 
 public class Employee {
 
+    public static final Employee DEFAULT_EMPLOYEE = new Employee("DEFAULT");
+
     private String name;
     private String login;
     private String password;
@@ -15,6 +17,7 @@ public class Employee {
     public Employee(String login) {
         this.login = login;
     }
+
 
     public void setPassword(String password) {
         this.password = password;

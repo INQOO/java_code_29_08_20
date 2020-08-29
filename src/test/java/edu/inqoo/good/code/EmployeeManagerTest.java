@@ -30,4 +30,39 @@ class EmployeeManagerTest {
         employee = employeeManager.getEmployeeList().get(0);
         assertEquals(PaymentManager.getManagerDefaultSalary(department), employee.getSalary());
     }
+
+    @Test
+    public void testGetEmployee(){
+        EmployeeManager manager = new EmployeeManager();
+        assertEquals(manager.getEmployee("test"), Employee.DEFAULT_EMPLOYEE);
+
+        String name = "test user";
+        String login = "test.user";
+        String password = "test";
+        String address = "Test street, yy-zzz Test";
+        Department department = Department.HR;
+        WorkerType workerType = WorkerType.MANAGER;
+
+        manager.addEmployee(name, login, password, address, workerType, department);
+
+        assertEquals(name, manager.getEmployee(login).getName());
+    }
+
+    @Test
+    public void testRemoveEmployee(){
+        EmployeeManager manager = new EmployeeManager();
+
+        String name = "test user";
+        String login = "test.user";
+        String password = "test";
+        String address = "Test street, yy-zzz Test";
+        Department department = Department.HR;
+        WorkerType workerType = WorkerType.MANAGER;
+
+        manager.addEmployee(name, login, password, address, workerType, department);
+        assertEquals(1, manager.getEmployeeList().size());
+
+        manager.removeEmployee(login);
+        assertEquals(0, manager.getEmployeeList().size());
+    }
 }
