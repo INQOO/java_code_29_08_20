@@ -25,6 +25,10 @@ public class RentCars {
     public void setDate(LocalDate date) {
         this.date = date;
     }
+
+    public LocalDate getDate() {
+        return date;
+    }
 }
 
 

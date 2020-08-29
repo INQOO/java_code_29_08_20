@@ -1,4 +1,5 @@
-Firma zamówiła system do zarządzania pracownikami w swojej organizacji, która składa się z trzech departamentów (HR, Sales, Production). Pracownicy mogą być na jednym z trzech stanowisk(CEO, Manager, Worker) z ustaloną początkową płacą.
+Firma zamówiła system do zarządzania pracownikami w swojej organizacji, która składa się z trzech departamentów (HR, Sales, Production).
+ Pracownicy mogą być na jednym z trzech stanowisk(CEO, Manager, Worker) z ustaloną początkową płacą.
 
 Stworzony system okazał się źle napisany, stworzone testy kontrolne nie przechodzą. Okazuje się, że cały kod ma błędy, choć kod się kompiluje.
 

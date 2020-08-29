@@ -12,7 +12,7 @@ public class EmployeeManager {
                           String address, String type, String department, BigDecimal salary) throws Exception {
         for (Employee employee: employeeList) {
             if(login == employee.getLogin()){
-                throw new Exception("The user wit the given login exists");
+                throw new Exception("The user with the given login exists");
             }
         }
         Employee employee = new Employee();
