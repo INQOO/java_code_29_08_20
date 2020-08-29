@@ -1,18 +1,18 @@
 Biblioteka / Wypożyczalnia samochodów
-
-Stwórz prosty system do zarządzania Biblioteka  lub Wypożyczalnia samochodów, który ma następujące funkcje:
-
+Stwórz prosty system do zarządzania Biblioteka lub Wypożyczalnia samochodów,
+który ma następujące funkcje:
     • wyświetla wszystkie książki/samochody
     • wyświetla wolne książki/samochody
     • wyświetla książki/samochody, których data zwrotu minęła
     • daje możliwość wypożyczenia książki/samochodu (na tydzień czasu)
     • daje możliwość zwrotu samochodu
-
-    • tworzenia i usuwania obiektów
+    • tworzenia i usuwania obiektów(opcjonalnie)
 
 System powinien składać się z:
-    • obiekt Samochód z polami: Marka, Model, Tablica Rejestracyjna(unikatowe), Kolor, Typ(suv, hatchback, kombi), data wypożyczenia
-      lub obiekt Książka z polami: Autor, Tytuł, ISBN(unikatowe), typ(Sci-fi, horror, poezja) Okładka, data wypożyczenia
+    • obiekt Samochód z polami: Marka, Model, Tablica Rejestracyjna(unikatowe),
+       Kolor, Typ(suv, hatchback, kombi), data zwrotu
+      lub obiekt Książka z polami: Autor, Tytuł, ISBN(unikatowe),
+      typ(Sci-fi, horror, poezja) Okładka, data zwrotu
     • Klasę zarządzającą posiadającą 10 obiektów różnego typu
-    • Klasę do wyświatlania wyników (opcjonalnie)
     • Klasę testową klasy zarządzającej
+    • Klasę do wyświatlania wyników (opcjonalnie)
