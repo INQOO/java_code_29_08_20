@@ -5,7 +5,7 @@ który ma następujące funkcje:
     • zwraca wolne książki/samochody
     • zwraca książki/samochody, których data zwrotu minęła
     • daje możliwość wypożyczenia książki/samochodu (na tydzień czasu)
-    • daje możliwość zwrotu samochodu
+    • daje możliwość zwrotu książki/samochodu
     • tworzenia i usuwania obiektów(opcjonalnie)
 
 System powinien składać się z:
